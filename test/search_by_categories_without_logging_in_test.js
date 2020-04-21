@@ -1,7 +1,6 @@
 describe('Search by Categories without logging in', function () {
   beforeEach(function () {
     this.actionwords = Object.create(require('./actionwords.js').Actionwords);
-
     // Given I open page "/"
     this.actionwords.iOpenPage("/");
     // And I am not logged in
