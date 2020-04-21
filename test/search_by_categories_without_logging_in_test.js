@@ -1,7 +1,7 @@
 describe('Search by Categories without logging in', function () {
   beforeEach(function () {
     this.actionwords = Object.create(require('./actionwords.js').Actionwords);
-    this.actionwords.sut = require('../src/coffee_machine.js').CoffeeMachine();
+
     // Given I open page "/"
     this.actionwords.iOpenPage("/");
     // And I am not logged in
@@ -20,8 +20,8 @@ describe('Search by Categories without logging in', function () {
       searchByCategoryShowsCoursesFromThatCategory.apply(this, ['Business']);
     });
 
-    it('finances', function () {
-      searchByCategoryShowsCoursesFromThatCategory.apply(this, ['Finance']);
+    it('design', function () {
+      searchByCategoryShowsCoursesFromThatCategory.apply(this, ['Design']);
     });
   });
 });
