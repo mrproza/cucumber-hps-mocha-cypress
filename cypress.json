@@ -1,8 +1,8 @@
 {
     "baseUrl": "https://www.udemy.com",
-    "ignoreTestFiles": "**/examples/*",
-    "veiwportHeight": 768,
+    "ignoreTestFiles": ["actionwords.js", "*.yaml", "**/examples/*"],
     "viewportWidth": 1920,
-    "waitForAnimations": true
+    "veiwportHeight": 768,
+    "waitForAnimations": true,
+    "integrationFolder": "test"
   }
-  
